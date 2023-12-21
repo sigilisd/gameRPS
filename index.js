@@ -13,7 +13,15 @@ const rockPaperScissors = (decitionPlayer) => {
     if (decitionPlayer === decitionComp) {
         return "У вас с компьютером одинковый выбор - Ничья";
     }
-    if (decitionPlayer === "камень" && decitionComp === "ножницы", decitionPlayer === "бумага" && decitionComp === "камень", decitionPlayer === "ножницы" && decitionComp === "бумага") {
+    if (decitionPlayer === "камень" && decitionComp === "ножницы") {
+        return `Ваш выбор: ${decitionPlayer} 
+Выбор компьютера: ${decitionComp}
+Игрок: победил`;
+    } else if (decitionPlayer === "бумага" && decitionComp === "камень") {
+        return `Ваш выбор: ${decitionPlayer} 
+Выбор компьютера: ${decitionComp}
+Игрок: победил`;
+    } else if (decitionPlayer === "ножницы" && decitionComp === "бумага") {
         return `Ваш выбор: ${decitionPlayer} 
 Выбор компьютера: ${decitionComp}
 Игрок: победил`;
